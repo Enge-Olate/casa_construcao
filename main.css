@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1024px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  background-color: #e1e1e1;
+  padding: 8px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  display: inline;
+  margin: 5px;
+}
+header nav ul li a {
+  text-decoration: overline #d8c9c9;
+  font-weight: bold;
+  color: #333;
+}
+
+header nav h1 {
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 30px auto;
+  /* background-color: #d88787c5; */
+}
+#produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 32.6%);
+  column-gap: 1%;
+  row-gap: 2%;
+  background-color: #fff;
+  padding: 8px;
+  height: 592.41px;
+}
+.produto {
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.produto img {
+  width: 100%;
+  height: auto;
+}
+.produto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.produto img {
+  width: 100%;
+}
+.produto h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.produto p {
+  margin-top: 20px;
+}
+aside {
+  background-image: url("./public/img/architect-1080592_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sobre {
+  margin: 5%;
+  background-color: transparent;
+}
+
+footer {
+  background-color: #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  align-items: last baseline;
+  padding: 8px;
+}
+footer .contato {
+  display: flex;
+  flex-direction: column;
+  margin-left: 340px;
+}
+footer .contato a {
+  text-decoration: none;
+}
+footer .contato ul {
+  list-style: none;
+}
+footer h3 {
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+footer .contato ul li {
+  margin-left: 15px;
+}
