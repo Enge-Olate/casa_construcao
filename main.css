@@ -112,3 +112,167 @@ footer h3 {
 footer .contato ul li {
   margin-left: 15px;
 }
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+  body{
+    width: 700px;
+  }
+      
+  header nav{
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    position: relative;
+  }
+      
+  header nav h1{
+    float: left;
+    left: 188.455px;
+    position: absolute;
+    top: 10px;
+  }
+  header nav ul{
+    position:absolute;
+    float: left;
+    left:253.025px;
+    bottom: 0;
+  }
+
+  .conteudo{
+    display: block;
+    margin:30px auto;
+  }
+  .conteudo main{
+    width:100%
+  }
+  .conteudo main h2{
+    text-align: center;
+  }
+  .conteudo main #produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    column-gap: 2%;
+    row-gap: 2%;
+    background-color: #7165658c;
+    padding: 8px;
+    height: 592.41px;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteudo main #produtos .produto{
+    font-size: 1.17rem;
+    padding: 4px;
+  }
+      
+  aside{
+    margin: 0 auto;
+    width: 100%;
+    font-size:1.17rem;
+  }
+  
+  footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  footer .contato{
+    margin:0 auto;
+    display: inline;
+   
+   
+  }
+  
+ 
+  
+}
+
+
+@media screen and (max-width: 430px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+  }
+
+  header nav {
+    display: block;
+    text-align: center;
+  }
+
+  header nav h1 {
+    float: none;
+    margin: 0 auto;
+    font-size:1.5rem;
+  }
+
+  header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  header nav ul li {
+    float: none;
+    display: block;
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #333;
+  }
+
+  .conteudo {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .conteudo main {
+    width: 100%;
+  }
+
+  .conteudo main #produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .produto {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  aside {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer .contato {
+    margin: 0 auto;
+    display: block;
+  }
+
+  footer .contato ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  footer .contato ul li {
+    margin: 5px 0;
+  }
+}
