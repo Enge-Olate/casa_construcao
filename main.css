@@ -113,7 +113,7 @@ footer .contato ul li {
   margin-left: 15px;
 }
 
-@media screen and (min-width:641px) and (max-width:1023px) {
+@media screen and (min-width:600px) and (max-width:1024px) {
   body{
     width: 700px;
   }
@@ -189,7 +189,7 @@ footer .contato ul li {
 }
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
   body {
     width: 100%;
     margin: 0;
